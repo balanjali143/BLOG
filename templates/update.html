@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="">title:</label>
+        <input name="title" type="text" value="{{post[1]}}"><br>
+        <label for="">content</label>
+        <textarea name="content"  rows='5'>{{post[2]}}</textarea><br>
+        <label for="">slug</label>
+        <input name="slug" type="text" value="{{post[3]}}"><br>
+        <button>Update</button>
+    </form>
+</body>
+</html>

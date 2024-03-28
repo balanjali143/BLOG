@@ -1,0 +1,16 @@
+
+{% extends  'homepage.html' %}
+
+{% block content %}
+<center>
+    <form method="POST">
+        <label for="">Title:</label>
+        <input name="title" type="text"><br>
+        <label for="">Content:</label>
+        <input name="content" type="text"><br>
+        <label for="">Slug:</label>
+        <input name="slug" type="text"><br>
+        <button>Submit</button>
+    </form> 
+</center>
+   {% endblock %}

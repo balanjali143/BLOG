@@ -1,0 +1,24 @@
+{% extends  'homepage.html' %}
+
+{% block content %}
+    <center>
+    <div class="container">
+        <h1>A.I</h1>
+        {%for i in posts%}
+        <div class="post">
+            <h2>
+            {{i[1]}}</h2>
+            <p>{{i[2]}}</p>
+            <small>posted at:{{i[3]}}</small>
+            <form method="POST" action="{{url_for('delete_post',id=i[0])}}" onsubmit="return confirm('are you sure you want to delete this post');">
+                <button>Delete</button>
+            </form>
+            <form method="GET" action="{{url_for('update',id=i[0])}}">
+                <button>Edit</button>
+            </form>
+        </div>
+    {% endfor %}
+    </div>
+    </center> 
+    {% endblock %}
+

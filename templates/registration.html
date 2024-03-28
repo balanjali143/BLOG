@@ -1,0 +1,24 @@
+<center>
+{% extends  'homepage.html' %}
+<div class="register">
+{% block content %}
+        <h1>REGISTRATION FORM</h1>
+    <form method="POST">
+        <label for=" ">Name:</label>
+        <input type="text" name="name" placeholder="enter your name"><br>
+        <label for="">Mobile:</label>
+        <input type="text" name="mobile" placeholder="enter your mobileno"><br>
+        <label for=" ">Email:</label>
+        <input type="text" name="email" placeholder="enter your email"><br>
+        <label for="">Address:</label>
+        <input type="text" name="address" placeholder="enter your address"><br>
+        <label for=" ">Password:</label>
+        <input type="text" name="password" placeholder="enter your password"><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</center>
+{% endblock %}
+
+
+    
